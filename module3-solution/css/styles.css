@@ -39,9 +39,9 @@ hr {
 }
 
 .row {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -51,14 +51,57 @@ h2 {
 	margin-bottom: 25px;
 }
 
-.col-xs-12 {
+section {
 	background-color: rgba(10, 9, 9, 0.3);
 	color: #fff;
-	width: 100%;
-	padding-bottom: 15px;
+	margin: 5px;
+	height: 700px;
+	position: relative;
 }	
 
 h4 {
 	text-align: center;
 	padding-bottom: 25px;
+	padding-top: 10px;
+}
+
+.container {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 100%;
+}
+
+.back {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+	
+	.col-lg-4 {
+		width: 32%;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.col-md-6 {
+		width: 47.5%;
+	}
+
+	.col-md-6:nth-child(3) {
+		width: 96%;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+	.col-sm-12 {
+		width: 95%;
+	}
 }
